@@ -44,6 +44,7 @@ Implement endpoints for CRUD operations on Products and Variants:
 /variant?name="variantname" GET the details of a specific product by variant name
 
 
+
 ## Testing with Postman:
 
 The postman collection is in file product restAPI product.postman_collection
