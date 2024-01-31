@@ -31,7 +31,7 @@ This will install all the dependencies
 
 Database Configuration:
 
-Configure Mongoose connection to your MongoDB instance. Chnage to your connection string in the server.js file.
+Configure Mongoose connection to your MongoDB instance. Change to your connection string in the server.js file.
 Defined schemas for both Product and Variant models.
 
 ## API Development:
