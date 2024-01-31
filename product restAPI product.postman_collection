@@ -1,0 +1,155 @@
+{
+	"info": {
+		"_postman_id": "21977913-70bb-4919-8b22-57a3fff4a2ad",
+		"name": "product",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "27822476",
+		"_collection_link": "https://speeding-space-327737.postman.co/workspace/productapi~23c9859a-220f-4335-b550-630d17ebd65e/collection/27822476-21977913-70bb-4919-8b22-57a3fff4a2ad?action=share&source=collection_link&creator=27822476"
+	},
+	"item": [
+		{
+			"name": "create product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"ironbox dx-7\",\r\n    \"description\": \"An iron box is a household appliance used for pressing and removing wrinkles from clothes using heat and steam.\",\r\n    \"price\": 750,\r\n    \"variants\":[\r\n        {\r\n            \"Vname\":\"ironbox dx-7 1000w\",\r\n            \"sku\":\"irn1000\",\r\n            \"additionalCost\":500,\r\n            \"stockCount\":23\r\n        },\r\n        {\r\n            \"Vname\":\"ironbox dx-7 700w\",\r\n            \"sku\":\"irn700\",\r\n            \"additionalCost\":300,\r\n            \"stockCount\":14\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "127.0.0.1:8000/create"
+			},
+			"response": []
+		},
+		{
+			"name": "get by product",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8000/product?name=ironbox%20dx-6",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"product"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "ironbox%20dx-6"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete product",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8000/delete?name=ironbox%20dx-7",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"delete"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "ironbox%20dx-7"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get by variant",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8000/variant?name=ironbox%20dx-7%201000w",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"variant"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "ironbox%20dx-7%201000w"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "127.0.0.1:8000/"
+			},
+			"response": []
+		},
+		{
+			"name": "update product",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"price\":9999990\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:8000/edit?name=ironbox%20dx-6",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"edit"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "ironbox%20dx-6"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
