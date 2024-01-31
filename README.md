@@ -23,7 +23,9 @@ Postman installed
 Project Setup (manual setup):
 
 Create a new Node.js project directory.
-Initialize npm dependencies: npm insatll
+
+Initialize npm dependencies: -> npm insatll
+
 This will install all the dependencies
 
 
